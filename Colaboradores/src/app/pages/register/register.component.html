@@ -1,0 +1,70 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Criar Conta</h2>
+
+    <form>
+
+      <div *ngIf="showMessage" class="message" [ngClass]="{'success': isSuccess, 'error': !isSuccess}">
+        {{ message }}
+      </div>
+
+      <label for="nome">Nome</label>
+      <div class="input-group">
+        <input 
+          type="text" 
+          name="nome" 
+          (keydown.enter)="onClick()"
+          [(ngModel)]="cadastroObj.nome"
+          placeholder="Digite seu nome" 
+          required 
+        />
+      </div>
+
+      <label for="email">Email</label>
+      <div class="input-group">
+        <input 
+          type="email" 
+          name="email" 
+          (keydown.enter)="onClick()"
+          [(ngModel)]="cadastroObj.email"
+          placeholder="Digite seu email" 
+          required 
+        />
+      </div>
+
+      <label for="login">Login</label>
+      <div class="input-group">
+        <input 
+          type="text" 
+          name="login" 
+          (keydown.enter)="onClick()"
+          [(ngModel)]="cadastroObj.login"
+          placeholder="Digite seu login" 
+          required 
+        />
+      </div>
+      
+      <label for="senha">Senha</label>
+      <div class="input-group">
+        <input 
+          type="password" 
+          name="senha" 
+          (keydown.enter)="onClick()"
+          [(ngModel)]="cadastroObj.senha"
+          placeholder="Digite sua senha" 
+          required 
+        />
+      </div>
+      
+      <button 
+        type="button" 
+        class="login-button" 
+        (click)="onClick()"> 
+        Criar Conta
+      </button>
+
+      <!-- Exibir a mensagem de sucesso ou erro abaixo do botão -->
+      
+    </form>
+  </div>
+</div>

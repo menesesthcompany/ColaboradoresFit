@@ -1,0 +1,33 @@
+<div class="login-container">
+  <div class="login-card">
+    <img id="logo" src="assets/images/logo.png" alt="Logo">
+
+    <p>Digite seu email para redefinir a senha.</p>
+
+    <form>
+      <label for="email">E-mail</label>
+      <div class="input-group">
+        <input 
+          type="email" 
+          name="email"
+          [(ngModel)]="recoveryObj.email" 
+          placeholder="Digite seu email" 
+          required 
+        />
+        <img id="img1" src="assets/images/email.png" alt="Email Icon">
+      </div>
+      
+      <button 
+        type="button" 
+        class="login-button" 
+        (click)="onSendEmail()"> 
+        Enviar email
+      </button>
+
+      <!-- Exibir a mensagem de sucesso ou erro abaixo do botão -->
+      <div *ngIf="showMessage" class="message" [ngClass]="{'success': isSuccess, 'error': !isSuccess}">
+        {{ message }}
+      </div>
+    </form>
+  </div>
+</div>

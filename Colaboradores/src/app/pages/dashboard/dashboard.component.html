@@ -1,0 +1,58 @@
+<!-- src/app/components/dashboard/dashboard.component.html -->
+<div class="dashboard-container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">Colaboradores Fit</div>
+    <nav>
+      <a href="#" class="active">Visão Geral</a>
+      <a href="#">Rotina de Treinos</a>
+      <a href="#">Planilhas</a>
+      <a href="#">Agenda</a>
+    </nav>
+    <div class="help">
+      <a href="#">Ajuda</a>
+      <a href="#">Sair</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="header">
+      <h2>Bem-vindo(a), {{ username }}!</h2> <!-- Exibindo o nome do usuário -->
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+      </div>
+      <div class="profile">
+        <img src="assets/images/icone.avif" alt="Foto de Perfil">
+      </div>
+    </div>
+
+    <div class="overview">
+      <div class="welcome-card">
+        <h3>Atualizações Diárias</h3>
+        <p>Mantenha o controle do seu gráfico, atualizando as informações semanalmente!</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card">Treino Diário</div>
+        <div class="stat-card">Atualizar Peso</div>
+        <div class="stat-card">Carboidratos e Proteínas Diários</div>
+      </div>
+    </div>
+
+    <div class="progress">
+      <h3>Progresso das Metas</h3>
+      <img id="grafico" src="assets/images/grafico.jpg">
+    </div>
+
+    <div class="schedule">
+      <h3>Minha Agenda</h3>
+
+      <ul>
+        <li>Segunda-feira: Musculação - 9:00 / Natação - 11:00</li>
+        <li>Terça-feira: Musculação - 9:00 + Cardio</li>
+        <li>Quarta-feira: Yoga - 7:00 / Musculação - 9:00</li>
+        <li>Quinta-feira: Natação - 7:00 / Musculação - 9:00</li>
+      </ul>
+    </div>
+  </div>
+</div>

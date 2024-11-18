@@ -1,0 +1,225 @@
+/* Paleta de Cores */
+:root {
+    --green: #44dc64;
+    --white: #ffffff;
+    --gray: #333333;
+    --light-gray: #555555;
+  }
+  
+  /* Estilos Gerais */
+  * {
+    font-family: Nunito;
+    font-weight: 700;
+    font-style: Bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    color: #333333;
+  }
+  
+
+  .dashboard-container {
+    display: flex;
+    height: 98.3vh;
+  }
+  
+
+  .sidebar {
+    width: 250px;
+    background-color: #333333;
+    color: white;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    
+  }
+  
+  .sidebar .logo {
+    font-size: 25px; 
+    color: #44dc64;  
+    margin-top: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar nav a {
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: 2%;
+    padding: 0.7rem 0.7rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+  }
+  
+  .sidebar nav a.active,
+  .sidebar nav a:hover {
+    background-color: #44dc64;
+
+  }
+  
+  .sidebar .help {
+    margin-top: auto;
+    margin-left: -64px;
+    padding: 1rem;
+  }
+  
+  .sidebar .help a {
+    color: white;
+    text-decoration: none;
+    margin-left: -63px;
+    display: block;
+  }
+  
+  /* Conteúdo Principal */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .main-content .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .main-content h2 {
+    color: #333333;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .profile img {
+    margin-bottom: -25px;
+    margin-top: -10px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #848484;
+    border-radius: 50%;
+  }
+  
+  .overview {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-card {
+    flex: 1;
+    background-color: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  .welcome-card h3 {
+    color: #44dc64;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #333333;
+    font-size: 1.2rem;
+  }
+  
+  .progress, .schedule {
+    background-color: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .progress h3{
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    color: #44dc64;
+  }
+
+  .schedule h3 {
+
+    align-items: left;
+    font-size: 18px;
+    display: flex;
+    color: #44dc64;
+  }
+  
+  .chart-placeholder {
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #676767;
+  }
+  
+  .schedule ul {
+    list-style: none;
+    color: #333333;
+  }
+  
+  .schedule ul li {
+    padding: 0.2rem 0;
+  }
+  
+  /* Adicionando estilos para itens novos */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    margin-left: 52.3rem;
+    margin-right: 0rem;
+    width: 250px;
+    border: 1px solid #a2a2a2; /* Borda branca */
+    border-radius: 10px;
+    background-color: #ffffff; /* Fundo para destacar o campo */
+    color: #333333; /* Cor do texto */
+  }
+  
+  #grafico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 195px;
+    margin-bottom: 0rem; 
+    height: 380px;
+    width: 1150px;
+  }
+  
+  .overview .welcome-card p {
+    color: #333333;
+    margin-top: 0.5rem;
+  }
+  
